@@ -1,0 +1,873 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------ BODY ------------------------------------------ */
+
+body{
+    background: black;
+    background-image: url(../images/earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* ------------------------------------------ HEADER ------------------------------------------ */
+
+.header{
+    height: 200px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 78%, rgba(3,3,98,1) 97%, rgba(0,202,255,1) 100%);
+}
+
+/* ----- SUPRA HEADER (H1) ----- */
+
+.divh1{
+    width: 20%;
+}
+.h1{
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcfcfc;
+    height: 100px;
+    width: 100%;
+}
+
+/* ----- INFRA HEADER (NAV) ----- */
+
+nav{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    padding-top: 50px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    justify-content: space-around;
+    background-color: #212121;
+    border-radius: 0 0% / 0 100%;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+li{
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+li:hover{
+    transform: scale(1.2);
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: cornflowerblue;
+}
+
+/* ----- MEDIA QUERY 1280 680 ----- */
+
+@media only screen and (max-width: 1280px){
+    .header{
+        height: 200px;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(3,3,98,1) 78%, rgba(0,202,255,1) 98%);
+    }
+    .divh1{
+        width: 100%;
+    }
+    .h1{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fcfcfc;
+        height: 50px;
+        width: 100%;
+    }
+    ul{ 
+        display: inline-block;
+        width: 100%;
+        height: 80%;
+        justify-content: space-around;
+        background-color: #212121;
+        border-radius: 0 0% / 0 100%;
+        box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    li{
+        background-color: #212121;
+        font-size: 20px;
+        font-weight: bold;
+        list-style: none;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* ------------------------------------------ INDEX ------------------------------------------ */
+
+.main{
+    padding-top: 65px;
+    height: 1000px;
+    width: 100%;
+    background-color: none;
+}
+.section1{
+    background-color: none;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+    /* PARÁMETROS INDEX */
+    $indcolor: black;
+
+/* ----- CAJAS DE NOTICIAS ----- */
+
+.caja{
+    border: 0px solid black;
+    margin: 20px;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+}
+.caja1{
+    background-image: url(../images/noticia3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 800px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.caja:hover{
+    transform: scale(1.05);
+}
+.caja2{
+    background-image: url(../images/noticia2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    width: 400px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.caja3{
+    background-image: url(../images/noticia1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    width: 400px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+/* ----- TEXTOS DE NOTICIAS ----- */
+
+.caja1text{
+    margin-top: 85%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    height: auto;
+    font-size: 30px;
+    color: white;
+    background-color: $indcolor;
+    font-weight: bold;
+    opacity: 0.9;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caja2text{
+    font-size: 20px;
+    color: white;
+    margin-top: 75%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    background-color: $indcolor;
+    font-weight: bold;
+    opacity: 0.9;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caja3text{
+    font-size: 20px;
+    color: white;
+    margin-top: 75%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    background-color: $indcolor;
+    font-weight: bold;
+    opacity: 0.9;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ----- MEDIA QUERY 1280 ----- */
+
+@media only screen and (max-width: 1280px){
+    .section1{
+        margin-top: 10px;
+        background-color: none;
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    .caja1{
+        height: 550px;
+        width: 550px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .caja2{
+        height: 300px;
+        width: 250px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .caja3{
+        height: 300px;
+        width: 250px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .caja1text{
+        font-size: 25px;
+    }
+    .caja2text{
+        font-size: 15px;
+    }
+    .caja3text{
+        font-size: 15px;
+    }
+}
+
+/* ----- MEDIA QUERY 680 ----- */
+
+@media only screen and (max-width: 680px){
+    .section1{
+        margin-top: 10px;
+        background-color: none;
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+    }
+    .caja1{
+        height: 250px;
+        width: 250px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .caja2{
+        height: 250px;
+        width: 250px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .caja3{
+        height: 250px;
+        width: 250px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .caja1text{
+        font-size: 10px;
+    }
+    .caja2text{
+        font-size: 10px;
+    }
+    .caja3text{
+        font-size: 10px;
+    }
+}
+
+/* ------------------------------------------ MEMBRESÍAS ------------------------------------------ */
+
+.section2{
+    background-color: none;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.memcaja{
+    border: 0px solid black;
+    margin: 20px;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.memcaja:hover{
+    transform: scale(1.05);
+}
+.memcaja1{
+    background: rgb(226,226,226);
+    background: radial-gradient(circle, rgba(226,226,226,1) 0%, rgba(167,167,167,1) 70%, rgba(128,128,128,1) 89%);
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.memcaja2{
+    background: rgb(228,204,94);
+    background: radial-gradient(circle, rgba(228,204,94,1) 0%, rgba(166,148,69,1) 70%, rgba(125,112,51,1) 89%);
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.memcaja3{
+    background: rgb(175,175,175);
+    background: radial-gradient(circle, rgba(175,175,175,1) 0%, rgba(120,120,120,1) 70%, rgba(77,77,77,1) 89%);
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.memcaja4{
+    background-color: black;
+    opacity: 0.9;
+    height: 500px;
+    width: 300px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.span1memcaja4{
+    font-weight: bold;
+}
+.memcaja5{
+    background-color: black;
+    opacity: 0.9;
+    height: 500px;
+    width: 300px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.span1memcaja5{
+    font-weight: bold;
+}
+.memcaja6{
+    background-color: black;
+    opacity: 0.9;
+    height: 500px;
+    width: 300px;
+    font-size: 25px;
+    color: white;
+    text-align: center;    
+}
+.span1memcaja6{
+    font-weight: bold;
+}
+
+/* ----- MEDIA QUERY 1280 ----- */
+
+@media only screen and (max-width: 1280px){
+    .section2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+    .memcaja1{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .memcaja4{
+        height: 250px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 15px;
+    }
+    .memcaja2{
+        height: 150px;
+        width: 150px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .memcaja5{
+        height: 250px;
+        width: 150px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 15px;
+    }
+    .memcaja3{
+        height: 150px;
+        width: 150px;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .memcaja6{
+        height: 250px;
+        width: 150px;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        font-size: 15px;
+    }
+}
+
+/* ----- MEDIA QUERY 680 ----- */
+
+@media only screen and (max-width: 680px){
+    .section2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    .memcaja1{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .memcaja4{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 10px;
+    }
+    .memcaja2{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .memcaja5{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-size: 10px;
+    }
+    .memcaja3{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .memcaja6{
+        height: 150px;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 6/7;
+        font-size: 10px;
+    }
+ }
+
+/* ------------------------------------------ CURSOS ------------------------------------------ */
+
+.section3{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    align-items: center;
+}
+    
+    /* PARÁMETROS CURCAJA */
+        $cbh: 70px;
+        $cbw: 100%;
+        $cbbc: white;
+        $cbfs: 35px;
+
+    @mixin curbox ($height, $width, $background-color, $font-size) {
+        height: $height;
+        width: $width;
+        background-color: $background-color;
+        font-size: $font-size;
+    }
+
+.curcaja{
+    border: 1px solid black;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    font-weight: bold;
+}
+.curcaja1{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja2{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja3{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja4{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja5{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja6{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja7{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja8{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+.curcaja9{
+    @include curbox ($cbh , $cbw , $cbbc , $cbfs)
+}
+
+/* ----- MEDIA QUERY 1280 ----- */
+
+@media only screen and (max-width: 1280px){
+    .section3{
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+        /* PARÁMETROS CURCAJA MEDIA QUERY */
+            $cbmqh: 50px;
+            $cbmqw: 100%;
+            $cbmqbc: white;
+            $cbmqfs: 20px;
+
+        @mixin curboxmq ($height, $width, $background-color, $font-size) {
+            height: $height;
+            width: $width;
+            background-color: $background-color;
+            font-size: $font-size;
+    }
+
+    .curcaja{
+        border: 1px solid black;
+        box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        justify-content: center;
+        font-weight: bold;
+    }
+    .curcaja1{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja2{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja3{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja4{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja5{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja6{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja7{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja8{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    .curcaja9{
+        @include curboxmq ($cbmqh , $cbmqw , $cbmqbc , $cbmqfs)
+    }
+    
+}
+
+/* ------------------------------------------ MATERIAL ------------------------------------------ */
+
+.section5{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+    /* PARÁMETROS MATCAJA */
+        $mbh: 70px;
+        $mbw: 100%;
+        $mbbc: white;
+        $mbfs: 35px;
+
+    @mixin matbox ($height, $width, $background-color, $font-size) {
+        height: $height;
+        width: $width;
+        background-color: $background-color;
+        font-size: $font-size;
+    }
+
+.matcaja{
+    border: 1px solid black;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    font-weight: bold;
+}
+.matcaja1{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja2{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja3{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja4{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja5{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja6{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja7{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja8{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+.matcaja9{
+    @include matbox ($mbh , $mbw , $mbbc , $mbfs)
+}
+
+/* ----- MEDIA QUERY 1280 ----- */
+
+@media only screen and (max-width: 1280px){
+
+    .section5{
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+        /* PARÁMETROS MATCAJA MEDIA QUERY */
+            $mbmqh: 50px;
+            $mbmqw: 100%;
+            $mbmqbc: white;
+            $mbmqfs: 20px;
+
+
+        @mixin matboxmq ($height, $width, $background-color, $font-size) {
+            height: $height;
+            width: $width;
+            background-color: $background-color;
+            font-size: $font-size;
+    }
+
+    .matcaja{
+        border: 1px solid black;
+        box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        justify-content: center;
+        font-weight: bold;
+    }
+    .matcaja1{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja2{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja3{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja4{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja5{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja6{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja7{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja8{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+    .matcaja9{
+        @include matboxmq ($mbmqh , $mbmqw , $mbmqbc , $mbmqfs)
+    }
+}
+
+/* ------------------------------------------ STAFF ------------------------------------------ */
+
+.section6{
+    background-color: none;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+        /* PARÁMETROS STAFF - IMAGEN */
+        $sibc: black;
+        $sibp: center;
+        $sibr: no-repeat;
+        $sih: 300px;
+        $siw: 300px;
+        $sibr: 100%;
+
+        /* PARÁMETROS STAFF - TEXTO */
+        $stbc: black;
+        $sto: 0.9;
+        $stg: 500px;
+        $stw: 300px;
+        $stfs: 25px;
+        $stc: white;
+        $stta: center;
+
+    @mixin sibox ($background-color, $background-position, $background-repeat, $height, $width, $border-radius) {
+        background-color: $background-color;
+        background-position: $background-position;
+        background-repeat: $background-repeat;
+        height: $height;
+        width: $width;
+        border-radius: $border-radius;
+}
+    @mixin stbox ($background-color, $opacity, $height, $width, $font-size, $color, $text-align) {
+        background-color: $background-color;
+        opacity: $opacity;
+        height: $height;
+        width: $width;
+        font-size: $font-size;
+        color: $color;
+        text-align: $text-align;
+}
+
+.stacaja{
+    border: 1px solid white;
+    margin: 20px;
+    box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.stacaja1{
+    background-image: url(../images/musk.jpg);
+    @include sibox ($sibc , $sibp , $sibr , $sih , $siw , $sibr);
+}
+.stacaja2{
+    background-image: url(../images/bezos.jpg);
+    @include sibox ($sibc , $sibp , $sibr , $sih , $siw , $sibr)
+}
+.stacaja3{
+    @include stbox ($stbc , $sto , $stg , $stw , $stfs , $stc , $stta)
+}
+.span1stacaja3{
+    font-weight: bold;
+}
+.stacaja4{
+    @include stbox ($stbc , $sto , $stg , $stw , $stfs , $stc , $stta)
+}
+.span1stacaja4{
+    font-weight: bold;
+}
+
+/* ----- MEDIA QUERY 1280 ----- */
+
+@media only screen and (max-width: 1280px){
+    
+    .section6{
+        background-color: none;
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+            /* PARÁMETROS STAFF MEDIA QUERY - IMAGEN */
+            $simqbc: black;
+            $simqbp: center;
+            $simqbr: no-repeat;
+            $simqh: 200px;
+            $simqw: 200px;
+            $simqbr: 100%;
+    
+            /* PARÁMETROS STAFF MEDIA QUERY - TEXTO */
+            $stmqbc: black;
+            $stmqo: 0.9;
+            $stmqg: 300px;
+            $stmqw: 200px;
+            $stmqfs: 18px;
+            $stmqc: white;
+            $stmqta: center;
+    
+        @mixin siboxmq ($background-color, $background-position, $background-repeat, $height, $width, $border-radius) {
+            background-color: $background-color;
+            background-position: $background-position;
+            background-repeat: $background-repeat;
+            height: $height;
+            width: $width;
+            border-radius: $border-radius;
+    }
+        @mixin stboxmq ($background-color, $opacity, $height, $width, $font-size, $color, $text-align) {
+            background-color: $background-color;
+            opacity: $opacity;
+            height: $height;
+            width: $width;
+            font-size: $font-size;
+            color: $color;
+            text-align: $text-align;
+    }
+
+    .stacaja{
+        border: 1px solid white;
+        margin: 20px;
+        box-shadow: 0 4px 80px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .stacaja1{
+        @include siboxmq ($simqbc , $simqbp , $simqbr , $simqh , $simqw , $simqbr);
+        background-image: url(../images/musk.jpg);
+        background-size: 150px;
+    }
+    .stacaja2{
+        @include siboxmq ($simqbc , $simqbp , $simqbr , $simqh , $simqw , $simqbr);
+        background-image: url(../images/bezos.jpg);
+        background-size: 200px;
+    }
+    .stacaja3{
+        @include stboxmq ($stmqbc , $stmqo , $stmqg , $stmqw , $stmqfs , $stmqc , $stmqta);
+    }
+    .span1stacaja3{
+        font-weight: bold;
+    }
+    .stacaja4{
+        @include stboxmq ($stmqbc , $stmqo , $stmqg , $stmqw , $stmqfs , $stmqc , $stmqta);
+    }
+    .span1stacaja4{
+        font-weight: bold;
+    }
+}
